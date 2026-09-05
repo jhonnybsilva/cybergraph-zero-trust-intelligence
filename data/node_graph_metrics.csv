@@ -1,0 +1,47 @@
+node_id,label,zone,tier,criticality,pagerank_authority,betweenness_chokepoint,closeness_reach,in_degree,out_degree,blast_radius_nodes,blast_criticality
+dc-corp-primary,Primary Domain Controller (AD),Identity,0,10,0.03313,0.00051,0.16132,2,1,1,10
+dc-corp-backup,Backup Domain Controller,Identity,0,10,0.05221,0.0,0.17241,2,0,0,0
+db-prod-erp,ERP Production Database (Oracle/SAP),Crown_Jewels,0,10,0.03127,0.0,0.16132,2,0,0,0
+db-cust-sql,Customer PII Database (Postgres),Crown_Jewels,0,10,0.03106,0.0,0.14545,2,0,0,0
+cloud-kms-vault,Cloud Key Management Vault,Crown_Jewels,0,9,0.03048,0.0,0.12804,1,0,0,0
+swift-pay-gateway,Financial Payment Core Gateway,Crown_Jewels,0,10,0.02406,0.0,0.14444,1,0,0,0
+bastion-rdp-01,Jump Server Bastion RDP,Bastion,1,8,0.06614,0.02424,0.24615,11,4,4,40
+bastion-ssh-01,Jump Host SSH Linux,Bastion,1,8,0.04196,0.0101,0.22222,10,2,2,19
+entra-id-sync,Entra ID / M365 Cloud Sync,Identity,1,8,0.01067,0.0,0.0,0,1,2,20
+sec-siem-collector,SIEM Log Collector,Management,1,7,0.01864,0.0,0.08889,4,0,0,0
+bkp-nas-core,Immutable Backup NAS Appliance,Management,1,8,0.01067,0.0,0.0,0,0,0,0
+app-api-gateway,Core Internal API Gateway,Core_Servers,1,7,0.01067,0.0,0.0,0,2,2,20
+srv-git-enterprise,Enterprise Code Repository,Core_Servers,1,7,0.021,0.0,0.13333,6,0,0,0
+srv-file-smb,Corporate File Sharing (SMB),Core_Servers,1,6,0.11037,0.0,0.62222,28,0,0,0
+edge-vpn-gw,Global Remote Access VPN Gateway,Edge,2,6,0.01067,0.0,0.0,0,1,2,15
+edge-dmz-proxy,Reverse Web Proxy DMZ,Edge,2,5,0.06052,0.0,0.62222,28,0,0,0
+firewall-internal,Internal Core Segmentation Firewall,Edge,2,7,0.01974,0.00253,0.02222,1,1,5,48
+waf-edge-cloud,Cloud Edge WAF & DDoS Shield,Edge,2,6,0.01067,0.0,0.0,0,0,0,0
+ws-finance-01,Workstation Finance 01,Endpoint_Finance,3,4,0.01067,0.0,0.0,0,4,9,67
+ws-finance-02,Workstation Finance 02,Endpoint_Finance,3,4,0.0142,0.00202,0.02222,1,4,9,67
+ws-finance-03,Workstation Finance 03,Endpoint_Finance,3,4,0.01536,0.00303,0.02963,1,4,9,67
+ws-finance-04,Workstation Finance 04,Endpoint_Finance,3,4,0.01575,0.00303,0.03333,1,4,9,67
+ws-finance-05,Workstation Finance 05,Endpoint_Finance,3,4,0.01587,0.00202,0.03556,1,4,8,63
+ws-finance-06,Workstation Finance 06,Endpoint_Finance,3,4,0.01592,0.0,0.03704,1,3,7,59
+ws-hr-01,Workstation Hr 01,Endpoint_Hr,3,2,0.01067,0.0,0.0,0,3,4,15
+ws-hr-02,Workstation Hr 02,Endpoint_Hr,3,2,0.01555,0.00101,0.02222,1,3,4,15
+ws-hr-03,Workstation Hr 03,Endpoint_Hr,3,2,0.01779,0.00101,0.02963,1,3,3,13
+ws-hr-04,Workstation Hr 04,Endpoint_Hr,3,2,0.01881,0.0,0.03333,1,2,2,11
+ws-dev-01,Workstation Dev 01,Endpoint_Dev,3,3,0.01067,0.0,0.0,0,5,8,51
+ws-dev-02,Workstation Dev 02,Endpoint_Dev,3,3,0.01356,0.00202,0.02222,1,5,8,51
+ws-dev-03,Workstation Dev 03,Endpoint_Dev,3,3,0.01434,0.00303,0.02963,1,5,8,51
+ws-dev-04,Workstation Dev 04,Endpoint_Dev,3,3,0.01455,0.00303,0.03333,1,5,8,51
+ws-dev-05,Workstation Dev 05,Endpoint_Dev,3,3,0.0146,0.00202,0.03556,1,5,7,48
+ws-dev-06,Workstation Dev 06,Endpoint_Dev,3,3,0.01462,0.0,0.03704,1,4,6,45
+ws-sales-01,Workstation Sales 01,Endpoint_Sales,3,2,0.01067,0.0,0.0,0,3,4,15
+ws-sales-02,Workstation Sales 02,Endpoint_Sales,3,2,0.01555,0.00101,0.02222,1,3,4,15
+ws-sales-03,Workstation Sales 03,Endpoint_Sales,3,2,0.01779,0.00101,0.02963,1,3,3,13
+ws-sales-04,Workstation Sales 04,Endpoint_Sales,3,2,0.01881,0.0,0.03333,1,2,2,11
+ws-ops-01,Workstation Ops 01,Endpoint_Ops,3,2,0.01067,0.0,0.0,0,5,8,49
+ws-ops-02,Workstation Ops 02,Endpoint_Ops,3,2,0.01384,0.00101,0.02222,1,5,8,49
+ws-ops-03,Workstation Ops 03,Endpoint_Ops,3,2,0.01479,0.00101,0.02963,1,5,7,47
+ws-ops-04,Workstation Ops 04,Endpoint_Ops,3,2,0.01507,0.0,0.03333,1,4,6,45
+ws-exec-01,Workstation Exec 01,Endpoint_Exec,3,4,0.01067,0.0,0.0,0,4,9,67
+ws-exec-02,Workstation Exec 02,Endpoint_Exec,3,4,0.0142,0.00101,0.02222,1,4,9,67
+ws-exec-03,Workstation Exec 03,Endpoint_Exec,3,4,0.01536,0.00101,0.02963,1,4,8,63
+ws-exec-04,Workstation Exec 04,Endpoint_Exec,3,4,0.01575,0.0,0.03333,1,3,7,59
