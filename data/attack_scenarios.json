@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Campanha APT-29: Pass-The-Hash Financeiro",
+    "sequence": [
+      "ws-finance-01",
+      "ws-finance-02",
+      "bastion-rdp-01",
+      "dc-corp-primary",
+      "db-prod-erp"
+    ],
+    "type": "Pass-The-Hash"
+  },
+  {
+    "name": "Campanha BlackCat: Ransomware via SMB e Bastion",
+    "sequence": [
+      "ws-sales-02",
+      "srv-file-smb",
+      "bastion-ssh-01",
+      "cloud-kms-vault"
+    ],
+    "type": "Ransomware-Spread"
+  },
+  {
+    "name": "Campanha Insider / Kerberoasting",
+    "sequence": [
+      "ws-dev-03",
+      "srv-git-enterprise",
+      "entra-id-sync",
+      "dc-corp-backup",
+      "db-cust-sql"
+    ],
+    "type": "Kerberoasting"
+  }
+]
