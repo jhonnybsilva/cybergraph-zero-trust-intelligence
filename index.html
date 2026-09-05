@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberGraph AI | Zero-Trust & Graph Data Science</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container header-content">
+      <a href="https://jhonnybsilva.github.io/portfolio/" class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-shield-virus"></i>
+        </div>
+        <div class="brand-text">
+          <h1>CyberGraph AI</h1>
+          <span>Graph Data Science & Zero-Trust • Jhonny Brasiliano</span>
+        </div>
+      </a>
+
+      <div class="header-actions">
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          Zero-Trust Graph Active (v3.1)
+        </div>
+        <a href="https://github.com/jhonnybsilva/cybergraph-zero-trust-intelligence" target="_blank" class="btn btn-outline">
+          <i class="fa-brands fa-github"></i> Repositório
+        </a>
+        <a href="https://jhonnybsilva.github.io/portfolio/" class="btn btn-primary">
+          <i class="fa-solid fa-arrow-left"></i> Voltar ao Portfólio
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-content">
+      <span class="hero-tag"><i class="fa-solid fa-diagram-project"></i> Graph Data Science & Cibersegurança de Redes</span>
+      <h2 class="hero-title">Detecção Preditiva de Movimentação Lateral & Simulação de Rotas de Ataque</h2>
+      <p class="hero-subtitle">
+        Aplicação de Teoria dos Grafos (NetworkX), PageRank de Privilégios e Machine Learning para mapeamento topológico de infraestruturas corporativas, cálculo de Raio de Destruição (Blast Radius) e contenção automatizada de invasões antes do comprometimento de ativos críticos (Tier 0).
+      </p>
+      
+      <div class="hero-badges">
+        <div class="badge-item"><i class="fa-brands fa-python" style="color: #38bdf8;"></i> Python 3.11</div>
+        <div class="badge-item"><i class="fa-solid fa-network-wired" style="color: #00f2fe;"></i> NetworkX (Graph Theory)</div>
+        <div class="badge-item"><i class="fa-solid fa-database" style="color: #34d399;"></i> SQLite 3 Relacional</div>
+        <div class="badge-item"><i class="fa-solid fa-microchip" style="color: #c084fc;"></i> HistGradientBoosting (F1: 99.1%)</div>
+        <div class="badge-item"><i class="fa-solid fa-shield-halved" style="color: #f43f5e;"></i> Zero-Trust Microsegmentation</div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <!-- Grade de KPIs Executivos -->
+    <section class="kpi-grid">
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span class="kpi-title">Ativos Topológicos</span>
+          <i class="fa-solid fa-server" style="color: #00f2fe;"></i>
+        </div>
+        <div class="kpi-value">46</div>
+        <div class="kpi-subtext"><i class="fa-solid fa-check"></i> Tier 0 (DC/DBs) a Tier 3 (Endpoints)</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span class="kpi-title">Relações de Confiança (Arestas)</span>
+          <i class="fa-solid fa-route" style="color: #fbbf24;"></i>
+        </div>
+        <div class="kpi-value">120</div>
+        <div class="kpi-subtext"><i class="fa-solid fa-arrow-right"></i> RDP, SSH, SMB, Kerberos & LDAP</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span class="kpi-title">Precisão de Interceptação</span>
+          <i class="fa-solid fa-bullseye" style="color: #10b981;"></i>
+        </div>
+        <div class="kpi-value">100%</div>
+        <div class="kpi-subtext"><i class="fa-solid fa-shield"></i> Zero falso alarme em 6.760 testes</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span class="kpi-title">Redução de Blast Radius</span>
+          <i class="fa-solid fa-fire" style="color: #f43f5e;"></i>
+        </div>
+        <div class="kpi-value">-78%</div>
+        <div class="kpi-subtext"><i class="fa-solid fa-arrow-down"></i> Isolamento de nós de estrangulamento</div>
+      </div>
+
+      <div class="kpi-card">
+        <div class="kpi-header">
+          <span class="kpi-title">Eventos Analisados</span>
+          <i class="fa-solid fa-bolt" style="color: #c084fc;"></i>
+        </div>
+        <div class="kpi-value">34.680</div>
+        <div class="kpi-subtext"><i class="fa-solid fa-chart-line"></i> Enriquecidos com métricas de grafo</div>
+      </div>
+    </section>
+
+    <!-- Visualizador Interativo de Topologia em Canvas -->
+    <section class="graph-section">
+      <div class="graph-header">
+        <div class="graph-title">
+          <i class="fa-solid fa-circle-nodes"></i> Simulador Visual de Movimentação Lateral & Zero-Trust
+        </div>
+
+        <div class="graph-controls">
+          <label style="font-size: 0.8rem; color: #94a3b8;">Invasão em:</label>
+          <select id="selectEntryPoint"></select>
+
+          <label style="font-size: 0.8rem; color: #94a3b8;">Alvo:</label>
+          <select id="selectTarget"></select>
+
+          <button class="btn btn-primary" onclick="simulateAttack()">
+            <i class="fa-solid fa-play"></i> Simular Invasão
+          </button>
+
+          <button id="btnSeverChokepoint" class="btn btn-outline" style="display: none; border-color: #10b981; color: #10b981;" onclick="severChokepoint()">
+            <i class="fa-solid fa-scissors"></i> Aplicar Regra Zero-Trust (Cortar Chokepoint)
+          </button>
+        </div>
+      </div>
+
+      <div class="canvas-wrapper">
+        <canvas id="networkCanvas"></canvas>
+        
+        <div class="canvas-overlay-info">
+          <div class="legend-item"><span class="legend-color" style="background: #fbbf24;"></span> Crown Jewels (Tier 0)</div>
+          <div class="legend-item"><span class="legend-color" style="background: #f43f5e;"></span> Domain Controllers (Tier 0)</div>
+          <div class="legend-item"><span class="legend-color" style="background: #00f2fe;"></span> Bastions & Jump Hosts (Tier 1)</div>
+          <div class="legend-item"><span class="legend-color" style="background: #c084fc;"></span> Servidores Internos (Tier 1)</div>
+          <div class="legend-item"><span class="legend-color" style="background: #10b981;"></span> Borda & Firewall (Tier 2)</div>
+          <div class="legend-item"><span class="legend-color" style="background: #3b82f6;"></span> Endpoints / Estações (Tier 3)</div>
+          <div class="legend-item" style="color: #94a3b8;"><i class="fa-solid fa-computer-mouse"></i> Arraste os nós ou dê zoom com o scroll</div>
+        </div>
+      </div>
+
+      <div class="graph-details-panel">
+        <div class="alert-box" id="attackAlertBox" style="display: none;">
+          <h4 id="alertTitle"><i class="fa-solid fa-triangle-exclamation"></i> Rota Preditiva</h4>
+          <p id="alertDesc">Selecione um nó e clique em Simular Invasão para traçar o caminho de menor resistência.</p>
+          <div class="playbook-badge" id="playbookRecommendation"></div>
+        </div>
+
+        <div style="background: var(--bg-card); border-radius: 10px; padding: 1.25rem; border: 1px solid var(--border-color);">
+          <h4 style="font-size: 0.85rem; color: #94a3b8; text-transform: uppercase; margin-bottom: 0.5rem;">Ponto de Estrangulamento (Chokepoint)</h4>
+          <p style="font-size: 0.95rem; font-weight: 700; color: #f8fafc; margin-bottom: 0.25rem;">bastion-rdp-01</p>
+          <span style="font-size: 0.8rem; color: #fbbf24;"><i class="fa-solid fa-shield"></i> Betweenness Centrality: 0.02424 (Maior ponte de privilégio da rede)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gráficos de Apoio: Campanhas & Features -->
+    <section class="charts-grid">
+      <div class="chart-card">
+        <div class="chart-card-header">
+          <div class="chart-title">
+            <i class="fa-solid fa-chart-pie" style="color: #f43f5e;"></i> Campanhas de Ataque Interceptadas
+          </div>
+        </div>
+        <div class="chart-container">
+          <canvas id="campaignPieChart"></canvas>
+        </div>
+      </div>
+
+      <div class="chart-card">
+        <div class="chart-card-header">
+          <div class="chart-title">
+            <i class="fa-solid fa-diagram-project" style="color: #00f2fe;"></i> Importância das Variáveis de Grafo (ML Weights)
+          </div>
+        </div>
+        <div class="chart-container">
+          <canvas id="graphFeaturesChart"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Arquitetura & Teoria dos Grafos -->
+    <section class="info-section">
+      <div class="info-card">
+        <h3><i class="fa-solid fa-square-root-variable"></i> Fundamentos Matemáticos (Graph Data Science)</h3>
+        <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 0.75rem;">
+          O motor de inteligência modela a rede como um grafo direcionado ponderado \( G = (V, E, W) \), utilizando medidas centrais para mensurar a criticidade estrutural:
+        </p>
+        <div class="code-block">
+# PageRank de Privilégio Estrutural:<br>
+PR(u) = (1 - d)/N + d * &Sigma; (PR(v) / OutDegree(v))<br><br>
+# Centralidade de Intermediação (Chokepoint Detection):<br>
+C_B(v) = &Sigma; (&sigma;_st(v) / &sigma;_st)  [para todos s &ne; v &ne; t]<br><br>
+# Menor Caminho de Ataque de Menor Fricção (Dijkstra):<br>
+AttackCost(Path) = &Sigma; W(e_i) + &Sigma; &Delta;Privilege(u, v)
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h3><i class="fa-solid fa-database"></i> Estrutura do Banco Relacional (SQLite)</h3>
+        <p style="color: #94a3b8; font-size: 0.9rem; margin-bottom: 0.75rem;">
+          O banco de dados armazena os nós, arestas topológicas, métricas calculadas e mais de 34.000 logs comportamentais:
+        </p>
+        <div class="code-block">
+CREATE TABLE graph_metrics (<br>
+&nbsp;&nbsp;node_id TEXT PRIMARY KEY REFERENCES network_nodes(id),<br>
+&nbsp;&nbsp;pagerank_authority REAL NOT NULL,<br>
+&nbsp;&nbsp;betweenness_chokepoint REAL NOT NULL,<br>
+&nbsp;&nbsp;blast_radius_nodes INTEGER NOT NULL,<br>
+&nbsp;&nbsp;blast_criticality INTEGER NOT NULL<br>
+);<br><br>
+-- Consulta de Risco de Salto de Privilégio:<br>
+SELECT source_node, target_node, privilege_delta, bytes_transferred<br>
+FROM auth_events WHERE is_lateral_movement = 1;
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p style="font-weight: 700; color: #f8fafc; font-size: 1rem;">
+        Jhonny Brasiliano da Silva
+      </p>
+      <p style="margin-top: 0.25rem;">
+        Especialista em Data Analytics (Pós-Graduação FIAP) • Infraestrutura de TI & Redes
+      </p>
+      <div class="footer-links">
+        <a href="https://jhonnybsilva.github.io/portfolio/" target="_blank"><i class="fa-solid fa-globe"></i> Portfólio Principal</a>
+        <a href="https://github.com/jhonnybsilva" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/jhonnybrasilianodasilva" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        <a href="mailto:jhonnybrasilianodasilva123etec@gmail.com"><i class="fa-solid fa-envelope"></i> Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="graph_sim.js"></script>
+</body>
+</html>
