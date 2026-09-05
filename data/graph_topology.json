@@ -1,0 +1,1324 @@
+{
+  "nodes": [
+    {
+      "id": "dc-corp-primary",
+      "label": "Primary Domain Controller (AD)",
+      "zone": "Identity",
+      "tier": 0,
+      "criticality": 10,
+      "os": "Windows Server 2022",
+      "pagerank": 0.0331,
+      "betweenness": 0.0005,
+      "blast_radius": 1,
+      "x": 881.8,
+      "y": 501.4
+    },
+    {
+      "id": "dc-corp-backup",
+      "label": "Backup Domain Controller",
+      "zone": "Identity",
+      "tier": 0,
+      "criticality": 10,
+      "os": "Windows Server 2022",
+      "pagerank": 0.0522,
+      "betweenness": 0.0,
+      "blast_radius": 0,
+      "x": 841.3,
+      "y": 485.0
+    },
+    {
+      "id": "db-prod-erp",
+      "label": "ERP Production Database (Oracle/SAP)",
+      "zone": "Crown_Jewels",
+      "tier": 0,
+      "criticality": 10,
+      "os": "RHEL 9",
+      "pagerank": 0.0313,
+      "betweenness": 0.0,
+      "blast_radius": 0,
+      "x": 887.9,
+      "y": 287.1
+    },
+    {
+      "id": "db-cust-sql",
+      "label": "Customer PII Database (Postgres)",
+      "zone": "Crown_Jewels",
+      "tier": 0,
+      "criticality": 10,
+      "os": "RHEL 9",
+      "pagerank": 0.0311,
+      "betweenness": 0.0,
+      "blast_radius": 0,
+      "x": 883.6,
+      "y": 316.1
+    },
+    {
+      "id": "cloud-kms-vault",
+      "label": "Cloud Key Management Vault",
+      "zone": "Crown_Jewels",
+      "tier": 0,
+      "criticality": 9,
+      "os": "Linux Hardened",
+      "pagerank": 0.0305,
+      "betweenness": 0.0,
+      "blast_radius": 0,
+      "x": 870.1,
+      "y": 419.0
+    },
+    {
+      "id": "swift-pay-gateway",
+      "label": "Financial Payment Core Gateway",
+      "zone": "Crown_Jewels",
+      "tier": 0,
+      "criticality": 10,
+      "os": "AIX Secure",
+      "pagerank": 0.0241,
+      "betweenness": 0.0,
+      "blast_radius": 0,
+      "x": 863.3,
+      "y": 276.8
+    },
+    {
+      "id": "bastion-rdp-01",
+      "label": "Jump Server Bastion RDP",
+      "zone": "Bastion",
+      "tier": 1,
+      "criticality": 8,
+      "os": "Windows Server 2022",
+      "pagerank": 0.0661,
+      "betweenness": 0.0242,
+      "blast_radius": 4,
+      "x": 655.7,
+      "y": 416.8
+    },
+    {
+      "id": "bastion-ssh-01",
+      "label": "Jump Host SSH Linux",
+      "zone": "Bastion",
+      "tier": 1,
+      "criticality": 8,
+      "os": "Ubuntu Server",
+      "pagerank": 0.042,
+      "betweenness": 0.0101,
+      "blast_radius": 2,
+      "x": 654.5,
+      "y": 224.6
+    },
+    {
+      "id": "entra-id-sync",
+      "label": "Entra ID / M365 Cloud Sync",
+      "zone": "Identity",
+      "tier": 1,
+      "criticality": 8,
+      "os": "Windows Server 2022",
+      "pagerank": 0.0107,
+      "betweenness": 0.0,
+      "blast_radius": 2,
+      "x": 865.8,
+      "y": 490.5
+    },
+    {
+      "id": "sec-siem-collector",
+      "label": "SIEM Log Collector",
+      "zone": "Management",
+      "tier": 1,
+      "criticality": 7,
+      "os": "Debian Linux",
+      "pagerank": 0.0186,
+      "betweenness": 0.0,
+      "blast_radius": 0,
+      "x": 637.5,
+      "y": 399.5
+    },
+    {
+      "id": "bkp-nas-core",
+      "label": "Immutable Backup NAS Appliance",
+      "zone": "Management",
+      "tier": 1,
+      "criticality": 8,
+      "os": "TrueNAS Enterprise",
+      "pagerank": 0.0107,
+      "betweenness": 0.0,
+      "blast_radius": 0,
+      "x": 658.5,
+      "y": 171.9
+    },
+    {
+      "id": "app-api-gateway",
+      "label": "Core Internal API Gateway",
+      "zone": "Core_Servers",
+      "tier": 1,
+      "criticality": 7,
+      "os": "Alpine Linux",
+      "pagerank": 0.0107,
+      "betweenness": 0.0,
+      "blast_radius": 2,
+      "x": 647.0,
+      "y": 450.8
+    },
+    {
+      "id": "srv-git-enterprise",
+      "label": "Enterprise Code Repository",
+      "zone": "Core_Servers",
+      "tier": 1,
+      "criticality": 7,
+      "os": "Ubuntu Server",
+      "pagerank": 0.021,
+      "betweenness": 0.0,
+      "blast_radius": 0,
+      "x": 652.0,
+      "y": 345.9
+    },
+    {
+      "id": "srv-file-smb",
+      "label": "Corporate File Sharing (SMB)",
+      "zone": "Core_Servers",
+      "tier": 1,
+      "criticality": 6,
+      "os": "Windows Server 2022",
+      "pagerank": 0.1104,
+      "betweenness": 0.0,
+      "blast_radius": 0,
+      "x": 606.8,
+      "y": 406.0
+    },
+    {
+      "id": "edge-vpn-gw",
+      "label": "Global Remote Access VPN Gateway",
+      "zone": "Edge",
+      "tier": 2,
+      "criticality": 6,
+      "os": "Cisco ASA / Firepower",
+      "pagerank": 0.0107,
+      "betweenness": 0.0,
+      "blast_radius": 2,
+      "x": 350.6,
+      "y": 130.3
+    },
+    {
+      "id": "edge-dmz-proxy",
+      "label": "Reverse Web Proxy DMZ",
+      "zone": "Edge",
+      "tier": 2,
+      "criticality": 5,
+      "os": "Nginx Hardened",
+      "pagerank": 0.0605,
+      "betweenness": 0.0,
+      "blast_radius": 0,
+      "x": 348.4,
+      "y": 469.0
+    },
+    {
+      "id": "firewall-internal",
+      "label": "Internal Core Segmentation Firewall",
+      "zone": "Edge",
+      "tier": 2,
+      "criticality": 7,
+      "os": "Fortinet FortiGate",
+      "pagerank": 0.0197,
+      "betweenness": 0.0025,
+      "blast_radius": 5,
+      "x": 405.9,
+      "y": 199.3
+    },
+    {
+      "id": "waf-edge-cloud",
+      "label": "Cloud Edge WAF & DDoS Shield",
+      "zone": "Edge",
+      "tier": 2,
+      "criticality": 6,
+      "os": "Cloudflare Enterprise",
+      "pagerank": 0.0107,
+      "betweenness": 0.0,
+      "blast_radius": 0,
+      "x": 373.3,
+      "y": 407.5
+    },
+    {
+      "id": "ws-finance-01",
+      "label": "Workstation Finance 01",
+      "zone": "Endpoint_Finance",
+      "tier": 3,
+      "criticality": 4,
+      "os": "macOS Sonoma",
+      "pagerank": 0.0107,
+      "betweenness": 0.0,
+      "blast_radius": 9,
+      "x": 152.7,
+      "y": 83.2
+    },
+    {
+      "id": "ws-finance-02",
+      "label": "Workstation Finance 02",
+      "zone": "Endpoint_Finance",
+      "tier": 3,
+      "criticality": 4,
+      "os": "Windows 11 Enterprise",
+      "pagerank": 0.0142,
+      "betweenness": 0.002,
+      "blast_radius": 9,
+      "x": 120.8,
+      "y": 179.7
+    },
+    {
+      "id": "ws-finance-03",
+      "label": "Workstation Finance 03",
+      "zone": "Endpoint_Finance",
+      "tier": 3,
+      "criticality": 4,
+      "os": "macOS Sonoma",
+      "pagerank": 0.0154,
+      "betweenness": 0.003,
+      "blast_radius": 9,
+      "x": 118.1,
+      "y": 270.8
+    },
+    {
+      "id": "ws-finance-04",
+      "label": "Workstation Finance 04",
+      "zone": "Endpoint_Finance",
+      "tier": 3,
+      "criticality": 4,
+      "os": "Windows 11 Enterprise",
+      "pagerank": 0.0157,
+      "betweenness": 0.003,
+      "blast_radius": 9,
+      "x": 100.1,
+      "y": 101.0
+    },
+    {
+      "id": "ws-finance-05",
+      "label": "Workstation Finance 05",
+      "zone": "Endpoint_Finance",
+      "tier": 3,
+      "criticality": 4,
+      "os": "macOS Sonoma",
+      "pagerank": 0.0159,
+      "betweenness": 0.002,
+      "blast_radius": 8,
+      "x": 155.9,
+      "y": 167.5
+    },
+    {
+      "id": "ws-finance-06",
+      "label": "Workstation Finance 06",
+      "zone": "Endpoint_Finance",
+      "tier": 3,
+      "criticality": 4,
+      "os": "Windows 11 Enterprise",
+      "pagerank": 0.0159,
+      "betweenness": 0.0,
+      "blast_radius": 7,
+      "x": 132.1,
+      "y": 503.3
+    },
+    {
+      "id": "ws-hr-01",
+      "label": "Workstation Hr 01",
+      "zone": "Endpoint_Hr",
+      "tier": 3,
+      "criticality": 2,
+      "os": "macOS Sonoma",
+      "pagerank": 0.0107,
+      "betweenness": 0.0,
+      "blast_radius": 4,
+      "x": 116.5,
+      "y": 444.8
+    },
+    {
+      "id": "ws-hr-02",
+      "label": "Workstation Hr 02",
+      "zone": "Endpoint_Hr",
+      "tier": 3,
+      "criticality": 2,
+      "os": "Windows 11 Enterprise",
+      "pagerank": 0.0156,
+      "betweenness": 0.001,
+      "blast_radius": 4,
+      "x": 105.4,
+      "y": 475.8
+    },
+    {
+      "id": "ws-hr-03",
+      "label": "Workstation Hr 03",
+      "zone": "Endpoint_Hr",
+      "tier": 3,
+      "criticality": 2,
+      "os": "macOS Sonoma",
+      "pagerank": 0.0178,
+      "betweenness": 0.001,
+      "blast_radius": 3,
+      "x": 163.6,
+      "y": 126.5
+    },
+    {
+      "id": "ws-hr-04",
+      "label": "Workstation Hr 04",
+      "zone": "Endpoint_Hr",
+      "tier": 3,
+      "criticality": 2,
+      "os": "Windows 11 Enterprise",
+      "pagerank": 0.0188,
+      "betweenness": 0.0,
+      "blast_radius": 2,
+      "x": 129.7,
+      "y": 378.9
+    },
+    {
+      "id": "ws-dev-01",
+      "label": "Workstation Dev 01",
+      "zone": "Endpoint_Dev",
+      "tier": 3,
+      "criticality": 3,
+      "os": "macOS Sonoma",
+      "pagerank": 0.0107,
+      "betweenness": 0.0,
+      "blast_radius": 8,
+      "x": 162.9,
+      "y": 301.6
+    },
+    {
+      "id": "ws-dev-02",
+      "label": "Workstation Dev 02",
+      "zone": "Endpoint_Dev",
+      "tier": 3,
+      "criticality": 3,
+      "os": "Windows 11 Enterprise",
+      "pagerank": 0.0136,
+      "betweenness": 0.002,
+      "blast_radius": 8,
+      "x": 135.4,
+      "y": 428.5
+    },
+    {
+      "id": "ws-dev-03",
+      "label": "Workstation Dev 03",
+      "zone": "Endpoint_Dev",
+      "tier": 3,
+      "criticality": 3,
+      "os": "macOS Sonoma",
+      "pagerank": 0.0143,
+      "betweenness": 0.003,
+      "blast_radius": 8,
+      "x": 137.8,
+      "y": 92.5
+    },
+    {
+      "id": "ws-dev-04",
+      "label": "Workstation Dev 04",
+      "zone": "Endpoint_Dev",
+      "tier": 3,
+      "criticality": 3,
+      "os": "Windows 11 Enterprise",
+      "pagerank": 0.0145,
+      "betweenness": 0.003,
+      "blast_radius": 8,
+      "x": 157.6,
+      "y": 249.4
+    },
+    {
+      "id": "ws-dev-05",
+      "label": "Workstation Dev 05",
+      "zone": "Endpoint_Dev",
+      "tier": 3,
+      "criticality": 3,
+      "os": "macOS Sonoma",
+      "pagerank": 0.0146,
+      "betweenness": 0.002,
+      "blast_radius": 7,
+      "x": 176.2,
+      "y": 410.6
+    },
+    {
+      "id": "ws-dev-06",
+      "label": "Workstation Dev 06",
+      "zone": "Endpoint_Dev",
+      "tier": 3,
+      "criticality": 3,
+      "os": "Windows 11 Enterprise",
+      "pagerank": 0.0146,
+      "betweenness": 0.0,
+      "blast_radius": 6,
+      "x": 148.1,
+      "y": 329.2
+    },
+    {
+      "id": "ws-sales-01",
+      "label": "Workstation Sales 01",
+      "zone": "Endpoint_Sales",
+      "tier": 3,
+      "criticality": 2,
+      "os": "macOS Sonoma",
+      "pagerank": 0.0107,
+      "betweenness": 0.0,
+      "blast_radius": 4,
+      "x": 159.8,
+      "y": 251.6
+    },
+    {
+      "id": "ws-sales-02",
+      "label": "Workstation Sales 02",
+      "zone": "Endpoint_Sales",
+      "tier": 3,
+      "criticality": 2,
+      "os": "Windows 11 Enterprise",
+      "pagerank": 0.0156,
+      "betweenness": 0.001,
+      "blast_radius": 4,
+      "x": 141.2,
+      "y": 162.8
+    },
+    {
+      "id": "ws-sales-03",
+      "label": "Workstation Sales 03",
+      "zone": "Endpoint_Sales",
+      "tier": 3,
+      "criticality": 2,
+      "os": "macOS Sonoma",
+      "pagerank": 0.0178,
+      "betweenness": 0.001,
+      "blast_radius": 3,
+      "x": 163.7,
+      "y": 129.6
+    },
+    {
+      "id": "ws-sales-04",
+      "label": "Workstation Sales 04",
+      "zone": "Endpoint_Sales",
+      "tier": 3,
+      "criticality": 2,
+      "os": "Windows 11 Enterprise",
+      "pagerank": 0.0188,
+      "betweenness": 0.0,
+      "blast_radius": 2,
+      "x": 113.3,
+      "y": 418.1
+    },
+    {
+      "id": "ws-ops-01",
+      "label": "Workstation Ops 01",
+      "zone": "Endpoint_Ops",
+      "tier": 3,
+      "criticality": 2,
+      "os": "macOS Sonoma",
+      "pagerank": 0.0107,
+      "betweenness": 0.0,
+      "blast_radius": 8,
+      "x": 154.1,
+      "y": 242.9
+    },
+    {
+      "id": "ws-ops-02",
+      "label": "Workstation Ops 02",
+      "zone": "Endpoint_Ops",
+      "tier": 3,
+      "criticality": 2,
+      "os": "Windows 11 Enterprise",
+      "pagerank": 0.0138,
+      "betweenness": 0.001,
+      "blast_radius": 8,
+      "x": 110.7,
+      "y": 400.4
+    },
+    {
+      "id": "ws-ops-03",
+      "label": "Workstation Ops 03",
+      "zone": "Endpoint_Ops",
+      "tier": 3,
+      "criticality": 2,
+      "os": "macOS Sonoma",
+      "pagerank": 0.0148,
+      "betweenness": 0.001,
+      "blast_radius": 7,
+      "x": 149.6,
+      "y": 383.2
+    },
+    {
+      "id": "ws-ops-04",
+      "label": "Workstation Ops 04",
+      "zone": "Endpoint_Ops",
+      "tier": 3,
+      "criticality": 2,
+      "os": "Windows 11 Enterprise",
+      "pagerank": 0.0151,
+      "betweenness": 0.0,
+      "blast_radius": 6,
+      "x": 164.1,
+      "y": 315.1
+    },
+    {
+      "id": "ws-exec-01",
+      "label": "Workstation Exec 01",
+      "zone": "Endpoint_Exec",
+      "tier": 3,
+      "criticality": 4,
+      "os": "macOS Sonoma",
+      "pagerank": 0.0107,
+      "betweenness": 0.0,
+      "blast_radius": 9,
+      "x": 144.9,
+      "y": 170.3
+    },
+    {
+      "id": "ws-exec-02",
+      "label": "Workstation Exec 02",
+      "zone": "Endpoint_Exec",
+      "tier": 3,
+      "criticality": 4,
+      "os": "Windows 11 Enterprise",
+      "pagerank": 0.0142,
+      "betweenness": 0.001,
+      "blast_radius": 9,
+      "x": 156.5,
+      "y": 506.9
+    },
+    {
+      "id": "ws-exec-03",
+      "label": "Workstation Exec 03",
+      "zone": "Endpoint_Exec",
+      "tier": 3,
+      "criticality": 4,
+      "os": "macOS Sonoma",
+      "pagerank": 0.0154,
+      "betweenness": 0.001,
+      "blast_radius": 8,
+      "x": 103.2,
+      "y": 500.7
+    },
+    {
+      "id": "ws-exec-04",
+      "label": "Workstation Exec 04",
+      "zone": "Endpoint_Exec",
+      "tier": 3,
+      "criticality": 4,
+      "os": "Windows 11 Enterprise",
+      "pagerank": 0.0157,
+      "betweenness": 0.0,
+      "blast_radius": 7,
+      "x": 129.6,
+      "y": 423.8
+    }
+  ],
+  "edges": [
+    {
+      "source": "dc-corp-primary",
+      "target": "dc-corp-backup",
+      "type": "AD_REPLICATION",
+      "weight": 0.5
+    },
+    {
+      "source": "bastion-rdp-01",
+      "target": "dc-corp-primary",
+      "type": "ADMINS_ON",
+      "weight": 1.0
+    },
+    {
+      "source": "bastion-rdp-01",
+      "target": "dc-corp-backup",
+      "type": "ADMINS_ON",
+      "weight": 1.0
+    },
+    {
+      "source": "bastion-rdp-01",
+      "target": "db-prod-erp",
+      "type": "DB_ADMIN_CONSOLE",
+      "weight": 1.2
+    },
+    {
+      "source": "bastion-rdp-01",
+      "target": "swift-pay-gateway",
+      "type": "PRIVILEGED_RDP",
+      "weight": 1.0
+    },
+    {
+      "source": "bastion-ssh-01",
+      "target": "db-cust-sql",
+      "type": "SSH_TUNNEL",
+      "weight": 1.2
+    },
+    {
+      "source": "bastion-ssh-01",
+      "target": "cloud-kms-vault",
+      "type": "SSH_KEY_AUTH",
+      "weight": 1.5
+    },
+    {
+      "source": "entra-id-sync",
+      "target": "dc-corp-primary",
+      "type": "LDAP_SYNC",
+      "weight": 0.8
+    },
+    {
+      "source": "app-api-gateway",
+      "target": "db-cust-sql",
+      "type": "SQL_QUERY_CLIENT",
+      "weight": 1.0
+    },
+    {
+      "source": "app-api-gateway",
+      "target": "db-prod-erp",
+      "type": "SQL_QUERY_CLIENT",
+      "weight": 1.0
+    },
+    {
+      "source": "edge-vpn-gw",
+      "target": "firewall-internal",
+      "type": "TRAFFIC_ROUTED",
+      "weight": 1.0
+    },
+    {
+      "source": "firewall-internal",
+      "target": "bastion-rdp-01",
+      "type": "TRAFFIC_FILTERED",
+      "weight": 1.5
+    },
+    {
+      "source": "ws-finance-01",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-finance-01",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-finance-01",
+      "target": "bastion-rdp-01",
+      "type": "CAN_RDP_TO",
+      "weight": 2.5
+    },
+    {
+      "source": "ws-finance-01",
+      "target": "ws-finance-02",
+      "type": "LAN_PEER_CONNECTION",
+      "weight": 3.5
+    },
+    {
+      "source": "ws-finance-02",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-finance-02",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-finance-02",
+      "target": "bastion-rdp-01",
+      "type": "CAN_RDP_TO",
+      "weight": 2.5
+    },
+    {
+      "source": "ws-finance-02",
+      "target": "ws-finance-03",
+      "type": "LAN_PEER_CONNECTION",
+      "weight": 3.5
+    },
+    {
+      "source": "ws-finance-03",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-finance-03",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-finance-03",
+      "target": "bastion-rdp-01",
+      "type": "CAN_RDP_TO",
+      "weight": 2.5
+    },
+    {
+      "source": "ws-finance-03",
+      "target": "ws-finance-04",
+      "type": "LAN_PEER_CONNECTION",
+      "weight": 3.5
+    },
+    {
+      "source": "ws-finance-04",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-finance-04",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-finance-04",
+      "target": "bastion-rdp-01",
+      "type": "CAN_RDP_TO",
+      "weight": 2.5
+    },
+    {
+      "source": "ws-finance-04",
+      "target": "ws-finance-05",
+      "type": "LAN_PEER_CONNECTION",
+      "weight": 3.5
+    },
+    {
+      "source": "ws-finance-05",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-finance-05",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-finance-05",
+      "target": "bastion-rdp-01",
+      "type": "CAN_RDP_TO",
+      "weight": 2.5
+    },
+    {
+      "source": "ws-finance-05",
+      "target": "ws-finance-06",
+      "type": "LAN_PEER_CONNECTION",
+      "weight": 3.5
+    },
+    {
+      "source": "ws-finance-06",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-finance-06",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-finance-06",
+      "target": "bastion-rdp-01",
+      "type": "CAN_RDP_TO",
+      "weight": 2.5
+    },
+    {
+      "source": "ws-hr-01",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-hr-01",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-hr-01",
+      "target": "ws-hr-02",
+      "type": "LAN_PEER_CONNECTION",
+      "weight": 3.5
+    },
+    {
+      "source": "ws-hr-02",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-hr-02",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-hr-02",
+      "target": "ws-hr-03",
+      "type": "LAN_PEER_CONNECTION",
+      "weight": 3.5
+    },
+    {
+      "source": "ws-hr-03",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-hr-03",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-hr-03",
+      "target": "ws-hr-04",
+      "type": "LAN_PEER_CONNECTION",
+      "weight": 3.5
+    },
+    {
+      "source": "ws-hr-04",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-hr-04",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-dev-01",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-dev-01",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-dev-01",
+      "target": "srv-git-enterprise",
+      "type": "GIT_SSH_ACCESS",
+      "weight": 1.5
+    },
+    {
+      "source": "ws-dev-01",
+      "target": "bastion-ssh-01",
+      "type": "CAN_SSH_TO",
+      "weight": 3.0
+    },
+    {
+      "source": "ws-dev-01",
+      "target": "ws-dev-02",
+      "type": "LAN_PEER_CONNECTION",
+      "weight": 3.5
+    },
+    {
+      "source": "ws-dev-02",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-dev-02",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-dev-02",
+      "target": "srv-git-enterprise",
+      "type": "GIT_SSH_ACCESS",
+      "weight": 1.5
+    },
+    {
+      "source": "ws-dev-02",
+      "target": "bastion-ssh-01",
+      "type": "CAN_SSH_TO",
+      "weight": 3.0
+    },
+    {
+      "source": "ws-dev-02",
+      "target": "ws-dev-03",
+      "type": "LAN_PEER_CONNECTION",
+      "weight": 3.5
+    },
+    {
+      "source": "ws-dev-03",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-dev-03",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-dev-03",
+      "target": "srv-git-enterprise",
+      "type": "GIT_SSH_ACCESS",
+      "weight": 1.5
+    },
+    {
+      "source": "ws-dev-03",
+      "target": "bastion-ssh-01",
+      "type": "CAN_SSH_TO",
+      "weight": 3.0
+    },
+    {
+      "source": "ws-dev-03",
+      "target": "ws-dev-04",
+      "type": "LAN_PEER_CONNECTION",
+      "weight": 3.5
+    },
+    {
+      "source": "ws-dev-04",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-dev-04",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-dev-04",
+      "target": "srv-git-enterprise",
+      "type": "GIT_SSH_ACCESS",
+      "weight": 1.5
+    },
+    {
+      "source": "ws-dev-04",
+      "target": "bastion-ssh-01",
+      "type": "CAN_SSH_TO",
+      "weight": 3.0
+    },
+    {
+      "source": "ws-dev-04",
+      "target": "ws-dev-05",
+      "type": "LAN_PEER_CONNECTION",
+      "weight": 3.5
+    },
+    {
+      "source": "ws-dev-05",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-dev-05",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-dev-05",
+      "target": "srv-git-enterprise",
+      "type": "GIT_SSH_ACCESS",
+      "weight": 1.5
+    },
+    {
+      "source": "ws-dev-05",
+      "target": "bastion-ssh-01",
+      "type": "CAN_SSH_TO",
+      "weight": 3.0
+    },
+    {
+      "source": "ws-dev-05",
+      "target": "ws-dev-06",
+      "type": "LAN_PEER_CONNECTION",
+      "weight": 3.5
+    },
+    {
+      "source": "ws-dev-06",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-dev-06",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-dev-06",
+      "target": "srv-git-enterprise",
+      "type": "GIT_SSH_ACCESS",
+      "weight": 1.5
+    },
+    {
+      "source": "ws-dev-06",
+      "target": "bastion-ssh-01",
+      "type": "CAN_SSH_TO",
+      "weight": 3.0
+    },
+    {
+      "source": "ws-sales-01",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-sales-01",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-sales-01",
+      "target": "ws-sales-02",
+      "type": "LAN_PEER_CONNECTION",
+      "weight": 3.5
+    },
+    {
+      "source": "ws-sales-02",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-sales-02",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-sales-02",
+      "target": "ws-sales-03",
+      "type": "LAN_PEER_CONNECTION",
+      "weight": 3.5
+    },
+    {
+      "source": "ws-sales-03",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-sales-03",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-sales-03",
+      "target": "ws-sales-04",
+      "type": "LAN_PEER_CONNECTION",
+      "weight": 3.5
+    },
+    {
+      "source": "ws-sales-04",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-sales-04",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-ops-01",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-ops-01",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-ops-01",
+      "target": "bastion-ssh-01",
+      "type": "CAN_SSH_TO",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-ops-01",
+      "target": "sec-siem-collector",
+      "type": "HTTPS_MGMT",
+      "weight": 1.5
+    },
+    {
+      "source": "ws-ops-01",
+      "target": "ws-ops-02",
+      "type": "LAN_PEER_CONNECTION",
+      "weight": 3.5
+    },
+    {
+      "source": "ws-ops-02",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-ops-02",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-ops-02",
+      "target": "bastion-ssh-01",
+      "type": "CAN_SSH_TO",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-ops-02",
+      "target": "sec-siem-collector",
+      "type": "HTTPS_MGMT",
+      "weight": 1.5
+    },
+    {
+      "source": "ws-ops-02",
+      "target": "ws-ops-03",
+      "type": "LAN_PEER_CONNECTION",
+      "weight": 3.5
+    },
+    {
+      "source": "ws-ops-03",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-ops-03",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-ops-03",
+      "target": "bastion-ssh-01",
+      "type": "CAN_SSH_TO",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-ops-03",
+      "target": "sec-siem-collector",
+      "type": "HTTPS_MGMT",
+      "weight": 1.5
+    },
+    {
+      "source": "ws-ops-03",
+      "target": "ws-ops-04",
+      "type": "LAN_PEER_CONNECTION",
+      "weight": 3.5
+    },
+    {
+      "source": "ws-ops-04",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-ops-04",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-ops-04",
+      "target": "bastion-ssh-01",
+      "type": "CAN_SSH_TO",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-ops-04",
+      "target": "sec-siem-collector",
+      "type": "HTTPS_MGMT",
+      "weight": 1.5
+    },
+    {
+      "source": "ws-exec-01",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-exec-01",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-exec-01",
+      "target": "bastion-rdp-01",
+      "type": "CAN_RDP_TO",
+      "weight": 2.5
+    },
+    {
+      "source": "ws-exec-01",
+      "target": "ws-exec-02",
+      "type": "LAN_PEER_CONNECTION",
+      "weight": 3.5
+    },
+    {
+      "source": "ws-exec-02",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-exec-02",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-exec-02",
+      "target": "bastion-rdp-01",
+      "type": "CAN_RDP_TO",
+      "weight": 2.5
+    },
+    {
+      "source": "ws-exec-02",
+      "target": "ws-exec-03",
+      "type": "LAN_PEER_CONNECTION",
+      "weight": 3.5
+    },
+    {
+      "source": "ws-exec-03",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-exec-03",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-exec-03",
+      "target": "bastion-rdp-01",
+      "type": "CAN_RDP_TO",
+      "weight": 2.5
+    },
+    {
+      "source": "ws-exec-03",
+      "target": "ws-exec-04",
+      "type": "LAN_PEER_CONNECTION",
+      "weight": 3.5
+    },
+    {
+      "source": "ws-exec-04",
+      "target": "srv-file-smb",
+      "type": "SMB_SHARE_MOUNT",
+      "weight": 2.0
+    },
+    {
+      "source": "ws-exec-04",
+      "target": "edge-dmz-proxy",
+      "type": "HTTP_PROXY",
+      "weight": 1.0
+    },
+    {
+      "source": "ws-exec-04",
+      "target": "bastion-rdp-01",
+      "type": "CAN_RDP_TO",
+      "weight": 2.5
+    }
+  ]
+}
