@@ -1,0 +1,47 @@
+id,label,zone,tier,criticality,os
+dc-corp-primary,Primary Domain Controller (AD),Identity,0,10,Windows Server 2022
+dc-corp-backup,Backup Domain Controller,Identity,0,10,Windows Server 2022
+db-prod-erp,ERP Production Database (Oracle/SAP),Crown_Jewels,0,10,RHEL 9
+db-cust-sql,Customer PII Database (Postgres),Crown_Jewels,0,10,RHEL 9
+cloud-kms-vault,Cloud Key Management Vault,Crown_Jewels,0,9,Linux Hardened
+swift-pay-gateway,Financial Payment Core Gateway,Crown_Jewels,0,10,AIX Secure
+bastion-rdp-01,Jump Server Bastion RDP,Bastion,1,8,Windows Server 2022
+bastion-ssh-01,Jump Host SSH Linux,Bastion,1,8,Ubuntu Server
+entra-id-sync,Entra ID / M365 Cloud Sync,Identity,1,8,Windows Server 2022
+sec-siem-collector,SIEM Log Collector,Management,1,7,Debian Linux
+bkp-nas-core,Immutable Backup NAS Appliance,Management,1,8,TrueNAS Enterprise
+app-api-gateway,Core Internal API Gateway,Core_Servers,1,7,Alpine Linux
+srv-git-enterprise,Enterprise Code Repository,Core_Servers,1,7,Ubuntu Server
+srv-file-smb,Corporate File Sharing (SMB),Core_Servers,1,6,Windows Server 2022
+edge-vpn-gw,Global Remote Access VPN Gateway,Edge,2,6,Cisco ASA / Firepower
+edge-dmz-proxy,Reverse Web Proxy DMZ,Edge,2,5,Nginx Hardened
+firewall-internal,Internal Core Segmentation Firewall,Edge,2,7,Fortinet FortiGate
+waf-edge-cloud,Cloud Edge WAF & DDoS Shield,Edge,2,6,Cloudflare Enterprise
+ws-finance-01,Workstation Finance 01,Endpoint_Finance,3,4,macOS Sonoma
+ws-finance-02,Workstation Finance 02,Endpoint_Finance,3,4,Windows 11 Enterprise
+ws-finance-03,Workstation Finance 03,Endpoint_Finance,3,4,macOS Sonoma
+ws-finance-04,Workstation Finance 04,Endpoint_Finance,3,4,Windows 11 Enterprise
+ws-finance-05,Workstation Finance 05,Endpoint_Finance,3,4,macOS Sonoma
+ws-finance-06,Workstation Finance 06,Endpoint_Finance,3,4,Windows 11 Enterprise
+ws-hr-01,Workstation Hr 01,Endpoint_Hr,3,2,macOS Sonoma
+ws-hr-02,Workstation Hr 02,Endpoint_Hr,3,2,Windows 11 Enterprise
+ws-hr-03,Workstation Hr 03,Endpoint_Hr,3,2,macOS Sonoma
+ws-hr-04,Workstation Hr 04,Endpoint_Hr,3,2,Windows 11 Enterprise
+ws-dev-01,Workstation Dev 01,Endpoint_Dev,3,3,macOS Sonoma
+ws-dev-02,Workstation Dev 02,Endpoint_Dev,3,3,Windows 11 Enterprise
+ws-dev-03,Workstation Dev 03,Endpoint_Dev,3,3,macOS Sonoma
+ws-dev-04,Workstation Dev 04,Endpoint_Dev,3,3,Windows 11 Enterprise
+ws-dev-05,Workstation Dev 05,Endpoint_Dev,3,3,macOS Sonoma
+ws-dev-06,Workstation Dev 06,Endpoint_Dev,3,3,Windows 11 Enterprise
+ws-sales-01,Workstation Sales 01,Endpoint_Sales,3,2,macOS Sonoma
+ws-sales-02,Workstation Sales 02,Endpoint_Sales,3,2,Windows 11 Enterprise
+ws-sales-03,Workstation Sales 03,Endpoint_Sales,3,2,macOS Sonoma
+ws-sales-04,Workstation Sales 04,Endpoint_Sales,3,2,Windows 11 Enterprise
+ws-ops-01,Workstation Ops 01,Endpoint_Ops,3,2,macOS Sonoma
+ws-ops-02,Workstation Ops 02,Endpoint_Ops,3,2,Windows 11 Enterprise
+ws-ops-03,Workstation Ops 03,Endpoint_Ops,3,2,macOS Sonoma
+ws-ops-04,Workstation Ops 04,Endpoint_Ops,3,2,Windows 11 Enterprise
+ws-exec-01,Workstation Exec 01,Endpoint_Exec,3,4,macOS Sonoma
+ws-exec-02,Workstation Exec 02,Endpoint_Exec,3,4,Windows 11 Enterprise
+ws-exec-03,Workstation Exec 03,Endpoint_Exec,3,4,macOS Sonoma
+ws-exec-04,Workstation Exec 04,Endpoint_Exec,3,4,Windows 11 Enterprise
